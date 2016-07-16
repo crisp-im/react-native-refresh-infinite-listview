@@ -1,7 +1,8 @@
 'use strict';
 
-var React = require('react-native');
-var {
+var React = require('react');
+
+import {
     Image,
     View,
     Text,
@@ -9,8 +10,8 @@ var {
     ListView,
     Dimensions,
     ActivityIndicatorIOS,
-    PropTypes,
-} = React;
+    PropTypes
+} from 'react-native';
 
 /*list status change graph
 *
