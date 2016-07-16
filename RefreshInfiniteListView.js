@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
 import {
     Image,
@@ -9,8 +9,7 @@ import {
     StyleSheet,
     ListView,
     Dimensions,
-    ActivityIndicatorIOS,
-    PropTypes
+    ActivityIndicatorIOS
 } from 'react-native';
 
 /*list status change graph
@@ -40,16 +39,16 @@ var DEFAULT_HF_HEIGHT = 50;
 
 var RefreshInfiniteListView = React.createClass({
     propTypes: {
-        footerHeight : PropTypes.number,
-        pullDistance : PropTypes.number,
-        renderEmptyRow : PropTypes.func,
-        renderHeaderRefreshIdle : PropTypes.func,
-        renderHeaderWillRefresh : PropTypes.func,
-        renderHeaderRefreshing : PropTypes.func,
-        renderFooterInifiteIdle : PropTypes.func,
-        renderFooterWillInifite : PropTypes.func,
-        renderFooterInifiting : PropTypes.func,
-        renderFooterInifiteLoadedAll : PropTypes.func,
+        footerHeight : React.PropTypes.number,
+        pullDistance : React.PropTypes.number,
+        renderEmptyRow : React.PropTypes.func,
+        renderHeaderRefreshIdle : React.PropTypes.func,
+        renderHeaderWillRefresh : React.PropTypes.func,
+        renderHeaderRefreshing : React.PropTypes.func,
+        renderFooterInifiteIdle : React.PropTypes.func,
+        renderFooterWillInifite : React.PropTypes.func,
+        renderFooterInifiting : React.PropTypes.func,
+        renderFooterInifiteLoadedAll : React.PropTypes.func,
     },
     getDefaultProps () {
         return {
